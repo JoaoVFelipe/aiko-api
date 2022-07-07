@@ -16,6 +16,8 @@ class Reminders extends Model {
       description: DataTypes.STRING,
       base_time: DataTypes.BIGINT,
       recorrence: DataTypes.JSON,
+      duration: DataTypes.BIGINT,
+      active: DataTypes.BOOLEAN,
     }, { sequelize });
 
     return this;
